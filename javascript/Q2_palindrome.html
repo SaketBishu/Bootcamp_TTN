@@ -1,0 +1,35 @@
+<html>  
+<head>  
+<script type="text/javascript">  
+function msgnn(){
+var j;
+ var a =prompt("Enter the string","hell");
+ j=a.length-1;
+ var count=0;
+ var n=(Math.floor(a.length/2));
+for(var i=0;i<n;i++)
+{
+if(a[i]==a[j])
+{
+count=count+1;
+}  
+j=j-1;
+}
+if(count==n)
+{
+alert("Yes it is palindrome");
+}
+else
+{
+alert("NO it is not a palindrome");
+}
+}
+</script>  
+</head>  
+<body>  
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msgnn()"/>  
+</form>  
+</body>  
+</html>  
