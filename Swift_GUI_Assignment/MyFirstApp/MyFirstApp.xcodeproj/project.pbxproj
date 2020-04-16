@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3EB75B2436021F00FAECED /* NextStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EB75A2436021F00FAECED /* NextStackViewController.swift */; };
+		5A3EB75D2436024C00FAECED /* SecondStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EB75C2436024B00FAECED /* SecondStackViewController.swift */; };
+		5A3EB75F2436026700FAECED /* FirstStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EB75E2436026700FAECED /* FirstStackViewController.swift */; };
+		5A3EB7612436027F00FAECED /* ThirdStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EB7602436027E00FAECED /* ThirdStackViewController.swift */; };
+		5A3EB7632436029700FAECED /* FourthStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3EB7622436029700FAECED /* FourthStackViewController.swift */; };
+		5A41547E24255FD200494977 /* NestedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A41547D24255FD200494977 /* NestedCollectionViewController.swift */; };
+		5A4154802425607B00494977 /* NestedCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A41547F2425607B00494977 /* NestedCollectionTableViewCell.swift */; };
 		5A423791240CEAF90000A6E0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A423790240CEAF90000A6E0 /* SignUpViewController.swift */; };
 		5A423793240EB1A10000A6E0 /* NewUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A423792240EB1A10000A6E0 /* NewUserDetailViewController.swift */; };
 		5A423795240EEB380000A6E0 /* EmployeeSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A423794240EEB380000A6E0 /* EmployeeSegmentViewController.swift */; };
@@ -24,9 +31,27 @@
 		5A4E822B240654E10043D2A9 /* Myclass1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E822A240654E10043D2A9 /* Myclass1ViewController.swift */; };
 		5A4E822D240655000043D2A9 /* Myclass2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E822C240655000043D2A9 /* Myclass2ViewController.swift */; };
 		5A4E822F2406552B0043D2A9 /* Myclass3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E822E2406552B0043D2A9 /* Myclass3ViewController.swift */; };
+		5A4E8D95241618820060F23C /* TabOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E8D94241618820060F23C /* TabOneViewController.swift */; };
+		5A4E8D97241618B40060F23C /* TabTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E8D96241618B40060F23C /* TabTwoViewController.swift */; };
+		5A4E8D99241618D40060F23C /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E8D98241618D40060F23C /* TabbarViewController.swift */; };
+		5A4E8D9E241626A10060F23C /* NavigateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E8D9D241626A10060F23C /* NavigateViewController.swift */; };
+		5A4E8DA12418AA570060F23C /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E8DA02418AA570060F23C /* RootPageViewController.swift */; };
+		5A4E8DA52418F9300060F23C /* RoundShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E8DA42418F9300060F23C /* RoundShadowViewController.swift */; };
+		5A5030462429166C0069DC65 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5030452429166C0069DC65 /* AddUserViewController.swift */; };
+		5A503048242920210069DC65 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A503047242920210069DC65 /* UserListViewController.swift */; };
+		5A50304B24293BCC0069DC65 /* UserDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50304924293BCC0069DC65 /* UserDataTableViewCell.swift */; };
+		5A50304C24293BCC0069DC65 /* UserDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A50304A24293BCC0069DC65 /* UserDataTableViewCell.xib */; };
+		5A50304E24293FE60069DC65 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50304D24293FE60069DC65 /* UserDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A3EB75A2436021F00FAECED /* NextStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStackViewController.swift; sourceTree = "<group>"; };
+		5A3EB75C2436024B00FAECED /* SecondStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStackViewController.swift; sourceTree = "<group>"; };
+		5A3EB75E2436026700FAECED /* FirstStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStackViewController.swift; sourceTree = "<group>"; };
+		5A3EB7602436027E00FAECED /* ThirdStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStackViewController.swift; sourceTree = "<group>"; };
+		5A3EB7622436029700FAECED /* FourthStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStackViewController.swift; sourceTree = "<group>"; };
+		5A41547D24255FD200494977 /* NestedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedCollectionViewController.swift; sourceTree = "<group>"; };
+		5A41547F2425607B00494977 /* NestedCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedCollectionTableViewCell.swift; sourceTree = "<group>"; };
 		5A423790240CEAF90000A6E0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5A423792240EB1A10000A6E0 /* NewUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserDetailViewController.swift; sourceTree = "<group>"; };
 		5A423794240EEB380000A6E0 /* EmployeeSegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeSegmentViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +71,17 @@
 		5A4E822A240654E10043D2A9 /* Myclass1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myclass1ViewController.swift; sourceTree = "<group>"; };
 		5A4E822C240655000043D2A9 /* Myclass2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myclass2ViewController.swift; sourceTree = "<group>"; };
 		5A4E822E2406552B0043D2A9 /* Myclass3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myclass3ViewController.swift; sourceTree = "<group>"; };
+		5A4E8D94241618820060F23C /* TabOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneViewController.swift; sourceTree = "<group>"; };
+		5A4E8D96241618B40060F23C /* TabTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTwoViewController.swift; sourceTree = "<group>"; };
+		5A4E8D98241618D40060F23C /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		5A4E8D9D241626A10060F23C /* NavigateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateViewController.swift; sourceTree = "<group>"; };
+		5A4E8DA02418AA570060F23C /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		5A4E8DA42418F9300060F23C /* RoundShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowViewController.swift; sourceTree = "<group>"; };
+		5A5030452429166C0069DC65 /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		5A503047242920210069DC65 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		5A50304924293BCC0069DC65 /* UserDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataTableViewCell.swift; sourceTree = "<group>"; };
+		5A50304A24293BCC0069DC65 /* UserDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataTableViewCell.xib; sourceTree = "<group>"; };
+		5A50304D24293FE60069DC65 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +95,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A3FAC03242F7DA300CFB271 /* Add User To Userlist */ = {
+			isa = PBXGroup;
+			children = (
+				5A50304D24293FE60069DC65 /* UserDetail.swift */,
+				5A50304A24293BCC0069DC65 /* UserDataTableViewCell.xib */,
+				5A50304924293BCC0069DC65 /* UserDataTableViewCell.swift */,
+				5A503047242920210069DC65 /* UserListViewController.swift */,
+				5A5030452429166C0069DC65 /* AddUserViewController.swift */,
+			);
+			path = "Add User To Userlist";
+			sourceTree = "<group>";
+		};
+		5A4154812425608E00494977 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				5A41547F2425607B00494977 /* NestedCollectionTableViewCell.swift */,
+				5A41547D24255FD200494977 /* NestedCollectionViewController.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
 		5A4E8206240634C60043D2A9 = {
 			isa = PBXGroup;
 			children = (
@@ -82,22 +139,67 @@
 				5A4E8214240634C60043D2A9 /* SceneDelegate.swift */,
 				5A4E8216240634C60043D2A9 /* ViewController.swift */,
 				5A4E8218240634C60043D2A9 /* Main.storyboard */,
+				5A4E8D9A2416223A0060F23C /* Tab Bar */,
 				5A4E821B240634CB0043D2A9 /* Assets.xcassets */,
 				5A4E821D240634CB0043D2A9 /* LaunchScreen.storyboard */,
 				5A4E8220240634CB0043D2A9 /* Info.plist */,
+				5A4E8D9F2418A8850060F23C /* Push_Pop */,
+				5A4E8D9C241622C30060F23C /* SignUp View */,
+				5A4E8D9B241622840060F23C /* Table View */,
+				5A4E8DA02418AA570060F23C /* RootPageViewController.swift */,
+				5A4E8DA42418F9300060F23C /* RoundShadowViewController.swift */,
+				5A4154812425608E00494977 /* Collection View */,
+				5A3FAC03242F7DA300CFB271 /* Add User To Userlist */,
+				5A3EB75A2436021F00FAECED /* NextStackViewController.swift */,
+				5A3EB75C2436024B00FAECED /* SecondStackViewController.swift */,
+				5A3EB75E2436026700FAECED /* FirstStackViewController.swift */,
+				5A3EB7602436027E00FAECED /* ThirdStackViewController.swift */,
+				5A3EB7622436029700FAECED /* FourthStackViewController.swift */,
+			);
+			path = MyFirstApp;
+			sourceTree = "<group>";
+		};
+		5A4E8D9A2416223A0060F23C /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				5A4E8D94241618820060F23C /* TabOneViewController.swift */,
+				5A4E8D96241618B40060F23C /* TabTwoViewController.swift */,
+				5A4E8D98241618D40060F23C /* TabbarViewController.swift */,
+				5A4E8D9D241626A10060F23C /* NavigateViewController.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		5A4E8D9B241622840060F23C /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				5A423796240F751D0000A6E0 /* InfoTableViewController.swift */,
+				5A42379C240F788A0000A6E0 /* InfoTableViewCell.swift */,
+				5A42379D240F788A0000A6E0 /* InfoTableViewCell.xib */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		5A4E8D9C241622C30060F23C /* SignUp View */ = {
+			isa = PBXGroup;
+			children = (
+				5A423790240CEAF90000A6E0 /* SignUpViewController.swift */,
+				5A423792240EB1A10000A6E0 /* NewUserDetailViewController.swift */,
+				5A423794240EEB380000A6E0 /* EmployeeSegmentViewController.swift */,
+			);
+			path = "SignUp View";
+			sourceTree = "<group>";
+		};
+		5A4E8D9F2418A8850060F23C /* Push_Pop */ = {
+			isa = PBXGroup;
+			children = (
 				5A4E822624063AD80043D2A9 /* CocaClassViewController.swift */,
 				5A4E82282406412F0043D2A9 /* Mycocoa2.swift */,
 				5A4E822A240654E10043D2A9 /* Myclass1ViewController.swift */,
 				5A4E822C240655000043D2A9 /* Myclass2ViewController.swift */,
 				5A4E822E2406552B0043D2A9 /* Myclass3ViewController.swift */,
-				5A423790240CEAF90000A6E0 /* SignUpViewController.swift */,
-				5A423792240EB1A10000A6E0 /* NewUserDetailViewController.swift */,
-				5A423794240EEB380000A6E0 /* EmployeeSegmentViewController.swift */,
-				5A423796240F751D0000A6E0 /* InfoTableViewController.swift */,
-				5A42379C240F788A0000A6E0 /* InfoTableViewCell.swift */,
-				5A42379D240F788A0000A6E0 /* InfoTableViewCell.xib */,
 			);
-			path = MyFirstApp;
+			path = Push_Pop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +262,7 @@
 			files = (
 				5A4E821F240634CB0043D2A9 /* LaunchScreen.storyboard in Resources */,
 				5A42379F240F788A0000A6E0 /* InfoTableViewCell.xib in Resources */,
+				5A50304C24293BCC0069DC65 /* UserDataTableViewCell.xib in Resources */,
 				5A4E821C240634CB0043D2A9 /* Assets.xcassets in Resources */,
 				5A4E821A240634C60043D2A9 /* Main.storyboard in Resources */,
 			);
@@ -172,19 +275,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4E8D99241618D40060F23C /* TabbarViewController.swift in Sources */,
 				5A42379E240F788A0000A6E0 /* InfoTableViewCell.swift in Sources */,
+				5A3EB75F2436026700FAECED /* FirstStackViewController.swift in Sources */,
 				5A4E8217240634C60043D2A9 /* ViewController.swift in Sources */,
+				5A4E8D97241618B40060F23C /* TabTwoViewController.swift in Sources */,
 				5A4E82292406412F0043D2A9 /* Mycocoa2.swift in Sources */,
+				5A4154802425607B00494977 /* NestedCollectionTableViewCell.swift in Sources */,
+				5A4E8D9E241626A10060F23C /* NavigateViewController.swift in Sources */,
+				5A4E8DA52418F9300060F23C /* RoundShadowViewController.swift in Sources */,
 				5A4E8213240634C60043D2A9 /* AppDelegate.swift in Sources */,
 				5A423797240F751D0000A6E0 /* InfoTableViewController.swift in Sources */,
+				5A50304B24293BCC0069DC65 /* UserDataTableViewCell.swift in Sources */,
+				5A41547E24255FD200494977 /* NestedCollectionViewController.swift in Sources */,
+				5A5030462429166C0069DC65 /* AddUserViewController.swift in Sources */,
+				5A50304E24293FE60069DC65 /* UserDetail.swift in Sources */,
 				5A423793240EB1A10000A6E0 /* NewUserDetailViewController.swift in Sources */,
 				5A4E822B240654E10043D2A9 /* Myclass1ViewController.swift in Sources */,
+				5A4E8D95241618820060F23C /* TabOneViewController.swift in Sources */,
+				5A3EB75D2436024C00FAECED /* SecondStackViewController.swift in Sources */,
 				5A4E822D240655000043D2A9 /* Myclass2ViewController.swift in Sources */,
 				5A4E822F2406552B0043D2A9 /* Myclass3ViewController.swift in Sources */,
 				5A423795240EEB380000A6E0 /* EmployeeSegmentViewController.swift in Sources */,
+				5A3EB7612436027F00FAECED /* ThirdStackViewController.swift in Sources */,
 				5A423791240CEAF90000A6E0 /* SignUpViewController.swift in Sources */,
+				5A4E8DA12418AA570060F23C /* RootPageViewController.swift in Sources */,
+				5A3EB75B2436021F00FAECED /* NextStackViewController.swift in Sources */,
 				5A4E8215240634C60043D2A9 /* SceneDelegate.swift in Sources */,
 				5A4E822724063AD80043D2A9 /* CocaClassViewController.swift in Sources */,
+				5A503048242920210069DC65 /* UserListViewController.swift in Sources */,
+				5A3EB7632436029700FAECED /* FourthStackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
