@@ -97,25 +97,57 @@
 				5A402F3B2441EC81009010A1 /* Assets.xcassets */,
 				5A402F3D2441EC81009010A1 /* LaunchScreen.storyboard */,
 				5A402F402441EC81009010A1 /* Info.plist */,
-				5A402F462441F4FC009010A1 /* HomeViewController.swift */,
-				5A402F482441F51B009010A1 /* CategoriesViewController.swift */,
-				5A402F4A2441F536009010A1 /* MycartViewController.swift */,
-				5A402F4C2441F553009010A1 /* favouritesViewController.swift */,
-				5A402F4E2441F56B009010A1 /* AccountsViewController.swift */,
+				5A409E1724486FB500D1CF7F /* Main Tabbar */,
+				5A409E1424486F1A00D1CF7F /* Accounts Tableview Cell */,
+				5A409E1524486F5700D1CF7F /* Country TableView */,
+				5A409E1624486F7700D1CF7F /* Language TableView */,
+			);
+			path = ecartApp;
+			sourceTree = "<group>";
+		};
+		5A409E1424486F1A00D1CF7F /* Accounts Tableview Cell */ = {
+			isa = PBXGroup;
+			children = (
 				5A428325244249440074B587 /* NormalTableViewCell.swift */,
 				5A428326244249440074B587 /* NormalTableViewCell.xib */,
 				5A428329244249620074B587 /* CountryTableViewCell.swift */,
 				5A42832A244249620074B587 /* CountryTableViewCell.xib */,
 				5A42832D244249830074B587 /* LanguageTableViewCell.swift */,
 				5A42832E244249830074B587 /* LanguageTableViewCell.xib */,
+			);
+			path = "Accounts Tableview Cell";
+			sourceTree = "<group>";
+		};
+		5A409E1524486F5700D1CF7F /* Country TableView */ = {
+			isa = PBXGroup;
+			children = (
 				5A5B8DA52444A0D90060B2BB /* CountryViewController.swift */,
-				5A5B8DA72444A0F30060B2BB /* LanguageViewController.swift */,
 				5A5B8DA92444A5FC0060B2BB /* CountryDataTableViewCell.swift */,
 				5A5B8DAA2444A5FC0060B2BB /* CountryDataTableViewCell.xib */,
+			);
+			path = "Country TableView";
+			sourceTree = "<group>";
+		};
+		5A409E1624486F7700D1CF7F /* Language TableView */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B8DA72444A0F30060B2BB /* LanguageViewController.swift */,
 				5A5B8DAD2444A62A0060B2BB /* LanguageDataTableViewCell.swift */,
 				5A5B8DAE2444A62A0060B2BB /* LanguageDataTableViewCell.xib */,
 			);
-			path = ecartApp;
+			path = "Language TableView";
+			sourceTree = "<group>";
+		};
+		5A409E1724486FB500D1CF7F /* Main Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				5A402F462441F4FC009010A1 /* HomeViewController.swift */,
+				5A402F482441F51B009010A1 /* CategoriesViewController.swift */,
+				5A402F4A2441F536009010A1 /* MycartViewController.swift */,
+				5A402F4C2441F553009010A1 /* favouritesViewController.swift */,
+				5A402F4E2441F56B009010A1 /* AccountsViewController.swift */,
+			);
+			path = "Main Tabbar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
