@@ -42,6 +42,7 @@
 		5A50304B24293BCC0069DC65 /* UserDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50304924293BCC0069DC65 /* UserDataTableViewCell.swift */; };
 		5A50304C24293BCC0069DC65 /* UserDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A50304A24293BCC0069DC65 /* UserDataTableViewCell.xib */; };
 		5A50304E24293FE60069DC65 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50304D24293FE60069DC65 /* UserDetail.swift */; };
+		5A730A38246DCBE9006919E7 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A730A37246DCBE9006919E7 /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		5A50304924293BCC0069DC65 /* UserDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataTableViewCell.swift; sourceTree = "<group>"; };
 		5A50304A24293BCC0069DC65 /* UserDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataTableViewCell.xib; sourceTree = "<group>"; };
 		5A50304D24293FE60069DC65 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		5A730A37246DCBE9006919E7 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				5A41547F2425607B00494977 /* NestedCollectionTableViewCell.swift */,
 				5A41547D24255FD200494977 /* NestedCollectionViewController.swift */,
+				5A730A37246DCBE9006919E7 /* MyCollectionViewCell.swift */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A730A38246DCBE9006919E7 /* MyCollectionViewCell.swift in Sources */,
 				5A4E8D99241618D40060F23C /* TabbarViewController.swift in Sources */,
 				5A42379E240F788A0000A6E0 /* InfoTableViewCell.swift in Sources */,
 				5A3EB75F2436026700FAECED /* FirstStackViewController.swift in Sources */,
