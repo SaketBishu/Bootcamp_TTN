@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        //GIDSignIn.sharedInstance()?.delegate = self
         return true
     }
+    
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
@@ -31,7 +39,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func application(
+        _ app: UIApplication,
+        open url: URL,
+        options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+    ) -> Bool {
+        
+
+        
+        return GIDSignIn.sharedInstance().handle(url)
+
+    }
+
+    
+    
 
 
 }
+
+//extension AppDelegate:GIDSignInDelegate{
+//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+//
+//        if let err = error{
+//            print("Login Failure",err)
+//            return
+//        }
+//        print("Successfully logged in Google Account")
+//
+//        guard let authentication = user.authentication else { return }
+//        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+//                                                          accessToken: authentication.accessToken)
+//
+//        Auth.auth().signIn(with: credential) { (authResult, error) in
+//
+//            if let err = error{
+//                print("Failed to create Firebase User with Google Account",err)
+//            }
+//
+//            guard let uid = user.userID else{return}
+//            print("Successfully logged into Firebase with Google",uid)
+//
+//
+//        }
+//    }
+//
+//
+//
+//
+//}
+
 

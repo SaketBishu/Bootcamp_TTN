@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellTrend" rowHeight="142" id="KGk-i7-Jjw" customClass="TrendingTableViewCell" customModule="ecartApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="313" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XBw-Bj-51V">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="142"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O8F-51-y1B">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="20" translatesAutoresizingMaskIntoConstraints="NO" id="gSb-Z5-q2Q">
+                        <rect key="frame" x="31" y="97" width="251" height="37"/>
+                        <color key="pageIndicatorTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pageControl>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="XBw-Bj-51V" secondAttribute="bottom" id="FDz-7i-9bS"/>
+                    <constraint firstItem="XBw-Bj-51V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GfS-Ih-IBX"/>
+                    <constraint firstItem="XBw-Bj-51V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="P9c-N4-u5Z"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gSb-Z5-q2Q" secondAttribute="trailing" constant="15" id="QL9-ff-9PT"/>
+                    <constraint firstItem="gSb-Z5-q2Q" firstAttribute="bottom" secondItem="XBw-Bj-51V" secondAttribute="bottom" constant="-8" id="SGl-H3-biL"/>
+                    <constraint firstAttribute="trailing" secondItem="XBw-Bj-51V" secondAttribute="trailing" id="VEZ-EJ-xcH"/>
+                    <constraint firstItem="gSb-Z5-q2Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="W8h-TX-yeh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="trendCollectionView" destination="XBw-Bj-51V" id="W7h-5k-asU"/>
+                <outlet property="trendpageControl" destination="gSb-Z5-q2Q" id="G4N-49-elh"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="77.008928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

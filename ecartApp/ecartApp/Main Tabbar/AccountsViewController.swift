@@ -8,15 +8,20 @@
 
 import UIKit
 
-class AccountsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class AccountsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
-    @IBOutlet weak var signInLabel: UILabel!
+    @IBOutlet weak var signInButton: UIButton!
     
     @IBOutlet public  weak var optionsTable: UITableView!
     @IBOutlet weak var imageSelect: UIImageView!
     
+    var tapGesture = UITapGestureRecognizer()
+    let mypickerController = UIImagePickerController()
     
-    public let datasource = [["Track Order","Size Chart","Notifications","Store Lacator"],["Country","Language","About Us","FAQ","Shipping & Returns"]]
+    
+    
+    
+    public let datasource = [["Track Order","Size Chart","Notifications","Location"],["Country","Language","About Us","FAQ","Shipping & Returns"]]
     
     let imagesource = [[#imageLiteral(resourceName: "Track Order"),#imageLiteral(resourceName: "Size Chart"),#imageLiteral(resourceName: "Notification"),#imageLiteral(resourceName: "Store Locator")],[#imageLiteral(resourceName: "Country"),#imageLiteral(resourceName: "Language"),#imageLiteral(resourceName: "About Us"),#imageLiteral(resourceName: "FAQ"),#imageLiteral(resourceName: "Shipping")]]
     let sectionHeader = [" "," "]
@@ -43,6 +48,13 @@ class AccountsViewController: UIViewController,UITableViewDelegate,UITableViewDa
         
         let nib3 = UINib.init(nibName: "LanguageTableViewCell", bundle: nil)
         optionsTable.register(nib3, forCellReuseIdentifier: "cellLang")
+        
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        tapGesture.numberOfTapsRequired = 1
+        imageSelect.isUserInteractionEnabled = true
+        imageSelect.addGestureRecognizer(tapGesture)
+        
+        mypickerController.delegate = self
 
 
         
@@ -55,6 +67,27 @@ class AccountsViewController: UIViewController,UITableViewDelegate,UITableViewDa
         }
         optionsTable.reloadData()
     }
+    
+    @objc func imageTapped(_ sender:UITapGestureRecognizer){
+        
+        mypickerController.allowsEditing = true
+        mypickerController.sourceType = .photoLibrary
+        self.present(mypickerController, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        
+        if let imagePicked = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            imageSelect.contentMode = .scaleAspectFill
+            imageSelect.image = imagePicked
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return datasource.count
@@ -106,8 +139,18 @@ class AccountsViewController: UIViewController,UITableViewDelegate,UITableViewDa
             navigationController?.pushViewController(vc, animated: true)
             
         }
+        if(datasource[indexPath.section][indexPath.row] == "Location"){
+            guard let vc = storyboard?.instantiateViewController(identifier: "GetLocationViewController") as? GetLocationViewController else{return}
+            navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        
+        optionsTable.deselectRow(at: indexPath, animated: true)
+        
+        
     }
     
+   
      func setLabelCountry(flagStr:String,codeStr:String)
     {
         flagImageStr = flagStr
@@ -121,5 +164,17 @@ class AccountsViewController: UIViewController,UITableViewDelegate,UITableViewDa
 
     
 }
+
+extension AccountsViewController{
+    
+    @IBAction func loginTapped(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+}
+
 
 
